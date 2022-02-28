@@ -1,0 +1,10 @@
+{
+	"name": "synapse-ws-sqlOnDemand--scixbwztvntimpvwpocws1",
+	"properties": {
+		"privateLinkResourceId": "/subscriptions/2f41cf01-d2e2-4c10-9c38-7015d9c35197/resourceGroups/ZKBPlayground/providers/Microsoft.Synapse/workspaces/scixbwztvntimpvwpocws1",
+		"groupId": "sqlOnDemand",
+		"fqdns": [
+			"scixbwztvntimpvwpocws1-ondemand.f832e470-2e9e-4daf-83e5-1591875b71c9.sql.azuresynapse.net"
+		]
+	}
+}
