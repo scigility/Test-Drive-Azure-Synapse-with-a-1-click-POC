@@ -1,0 +1,32 @@
+{
+	"name": "transCSV",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "TripFaresDataLakeStorageLinkedService",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "FiancialData"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "trans.csv",
+				"folderPath": "FinancialData",
+				"fileSystem": "public"
+			},
+			"columnDelimiter": ";",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "trans_id;account_id;date;type;operation;amount;balance;k_symbol;branch;bank;account",
+				"type": "String"
+			}
+		]
+	}
+}
