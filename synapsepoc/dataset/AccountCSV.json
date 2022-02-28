@@ -1,0 +1,36 @@
+{
+	"name": "AccountCSV",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "TripFaresDataLakeStorageLinkedService",
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"keyVaultName": "kvscijtqnlm4msa2j4poc",
+				"datalakeAccountName": "scijtqnlm4msa2j4poc"
+			}
+		},
+		"folder": {
+			"name": "FiancialData"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "account.csv",
+				"folderPath": "FinancialData",
+				"fileSystem": "public"
+			},
+			"columnDelimiter": ";",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "\"account_id\";\"district_id\";\"frequency\";\"date\"",
+				"type": "String"
+			}
+		]
+	}
+}

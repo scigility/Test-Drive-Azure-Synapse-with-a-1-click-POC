@@ -1,0 +1,9 @@
+{
+	"name": "FiancialData",
+	"properties": {
+		"folder": {
+			"name": "FinancialData"
+		},
+		"annotations": []
+	}
+}
