@@ -1,0 +1,22 @@
+{
+	"name": "FinancialData",
+	"properties": {
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"Properties": {
+			"IsSyMSCDMDatabase": true
+		},
+		"Name": "FinancialData",
+		"EntityType": "DATABASE",
+		"Source": {
+			"Provider": "ADLS",
+			"Location": "abfss://public@scijtqnlm4msa2j4poc.dfs.core.windows.net/FinancialData",
+			"Properties": {
+				"FormatType": "csv",
+				"LinkedServiceName": "scijtqnlm4msa2j4pocws1-WorkspaceDefaultStorage"
+			}
+		}
+	},
+	"type": "DATABASE"
+}
